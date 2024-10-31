@@ -2,6 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 require('dotenv').config();
+console.log("API Key:", process.env.WEATHER_API_KEY);
 
 const app = express();
 app.use(cors());
