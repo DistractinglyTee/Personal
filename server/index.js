@@ -16,7 +16,8 @@ app.get('/api/weather', async (req, res) => {
   }
 
   try {
-    const response = await axios.get(`https://api.weatherapi.com/v1/current.json`, {
+    const response = await axios.get(`http://api.weatherstack.com/current
+    ?access_key = 43d196694d09aa6d55ea7ad22469e729`, {
       params: {
         key: WEATHER_API_KEY,
         q: location,
